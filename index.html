@@ -1,112 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Used and Rare Books</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background: #333;
-            color: #fff;
-            padding: 1em 0;
-            text-align: center;
-        }
-        nav {
-            text-align: center;
-            margin: 1em 0;
-        }
-        nav a {
-            margin: 0 15px;
-            color: #333;
-            text-decoration: none;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        .section {
-            margin-bottom: 20px;
-        }
-        .image-placeholder {
-            background: #ccc;
-            width: 100%;
-            height: 200px;
-            text-align: center;
-            line-height: 200px;
-            color: #666;
-            margin-bottom: 15px;
-        }
-        footer {
-            background: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-            margin-top: 20px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coming Soon Page</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to Book Cellar NY!</h1>
-        <p>Your destination for used and rare books.</p>
-    </header>
-    <nav>
-        <a href="#about">About Us</a>
-        <a href="#collection">Our Collection</a>
-        <a href="#contact">Contact</a>
-    </nav>
-    <div class="container">
-        <section id="about" class="section">
-            <h2>About Us</h2>
-            <p>We specialize in sourcing and preserving used and rare books for collectors, enthusiasts, and avid readers. Our mission is to connect people with the stories that shaped the world.</p>
-            <img src="man_reading_book.jpg" alt="man_reading_book" width="500">
-        </section>
-        <section id="collection" class="section">
-            <h2>Our Collection</h2>
-            <p>From preloved books to first editions to out-of-print volumes, our carefully curated selection spans a wide range of genres and eras.</p>
-            <img src="book_collect.png" alt="book collection" width="500">
-	<p>Our collection includes...</p>
-    <h2>Featured Titles</h2>
-    <ul>
-        <li><strong>Pride and Prejudice</strong> by Jane Austen</li>
-        <li><strong>Moby-Dick</strong> by Herman Melville</li>
-        <li><strong>To Kill a Mockingbird</strong> by Harper Lee</li>
-        <li><strong>1984</strong> by George Orwell</li>
-        <li><strong>Jane Eyre</strong> by Charlotte Brontë</li>
-        <li><strong>The Great Gatsby</strong> by F. Scott Fitzgerald</li>
-        <li><strong>War and Peace</strong> by Leo Tolstoy</li>
-        <li><strong>Wuthering Heights</strong> by Emily Brontë</li>
-        <li><strong>The Catcher in the Rye</strong> by J.D. Salinger</li>
-        <li><strong>The Hobbit</strong> by J.R.R. Tolkien</li>
-    </ul>
-    <p><em>...and many more.</em></p>
-</section>
+  <div class="container">
+    <!-- Left Content -->
+    <div class="content">
+      <img src="logo.svg" alt="Apparel Logo" class="logo">
+      <h1>We're <span>Coming</span> Soon</h1>
+      <p>
+        Hello fellow shoppers! We're currently building our new fashion store. Add your email below 
+        to stay up-to-date with announcements and our launch deals.
+      </p>
 
-        </section>
-        <section id="contact" class="section">
-            <h2>Contact Us</h2>
-            <p>Have questions or looking for a specific title? Visit our store or reach out to us:</p>
-            <address>
-                <strong>Our Address:</strong><br>
-                1465 York Ave<br>
-                New York, NY 10075-8803<br>
-                <strong>Email:</strong> notreal@rarebookstore.com<br>
-                <strong>Phone:</strong> (555)-555-5555
-            </address>
-        </section>
+      <!-- Email Form -->
+      <form id="email-form" novalidate>
+        <div class="input-container">
+          <input type="email" id="email" placeholder="Email Address" required>
+          <button type="submit" class="submit-btn">
+            <img src="icon-arrow.svg" alt="Submit">
+          </button>
+          <span id="error-msg"></span>
+        </div>
+      </form>
     </div>
-    <footer>
-        <p>&copy; 2024 Used and Rare Bookstore. All rights reserved.</p>
-    </footer>
+
+    <!-- Right Image -->
+    <div class="image-container">
+     <picture>
+    <!-- Image for small screens -->
+    <source srcset="hero-mobile.jpg" media="(max-width: 768px)">
+    <!-- Image for larger screens -->
+    <img src="hero-desktop.jpg" alt="Coming Soon Page">
+    </picture>
+    </div>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
